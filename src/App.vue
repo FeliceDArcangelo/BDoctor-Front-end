@@ -1,17 +1,35 @@
-<script>
-  import titleEx from './components/titleEx.vue';
+<script >
+import AppHeader from './components/AppHeader.vue';
 
-  export default{
-    components: {
-      titleEx,
+export default {
+  name: 'app',
+  components: {
+    AppHeader
+  },
+  data() {
+    return {
+
+
     }
+  },
+  created() {
+
+  },
+  mounted() {
+
+  },
+  methods: {
+
+
   }
+}
 </script>
 
 <template>
-  <titleEx/>
+  <AppHeader></AppHeader>
+  <RouterView></RouterView>
 </template>
 
-<style scoped>
-
+<style lang="scss">
+@use './style/main.scss';
 </style>
