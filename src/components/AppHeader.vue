@@ -10,9 +10,9 @@ export default {
 </script>
 
 <template>
-  <nav class="navbar navbar-expand-md navbar-light" style="background-color: #3498db; height: 160px; box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);">
-    <div class="container d-flex align-items-center justify-content-between w-100">
-      <a class="navbar-brand mb-2" href="#">
+  <nav class="navbar navbar-expand-md navbar-light" style="background-color: #3498db; box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);">
+    <div class="container-fluid"> <!-- Utilizzo di container-fluid per estendere la larghezza -->
+      <a class="navbar-brand" href="#">
         <img src="" alt="" style="max-height: 50px;">
         <span style="color: #ffffff; font-weight: bold;">BDoctors</span>
       </a>
@@ -22,7 +22,7 @@ export default {
       </button>
 
       <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
-        <a class="navbar-brand mb-2" href="#">
+        <a class="navbar-brand" href="#">
           <img src="" alt="" style="max-height: 50px;">
           <span style="color: #ffffff; font-weight: bold;">Accedi</span>
         </a>
@@ -31,7 +31,7 @@ export default {
           <span class="navbar-toggler-icon"></span>
         </button>
 
-        <a class="navbar-brand mb-2" href="#">
+        <a class="navbar-brand" href="#">
           <img src="" alt="" style="max-height: 50px;">
           <span style="color: #ffffff; font-weight: bold;">Chi Siamo</span>
         </a>
@@ -46,8 +46,14 @@ export default {
 
 <style lang="scss" scoped>
 .navbar {
-  height: 80px;
   box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.container-fluid {
+  padding-right: 15px;
+  padding-left: 15px;
+  margin-right: auto;
+  margin-left: auto;
 }
 
 .navbar-brand {
@@ -68,6 +74,12 @@ export default {
 
   &:hover {
     background-color: #3498db;
+  }
+}
+
+@media (max-width: 1024px) {
+  .navbar-brand {
+    margin-bottom: 8px;
   }
 }
 </style>
