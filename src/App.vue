@@ -30,6 +30,6 @@ export default {
   <RouterView></RouterView>
 </template>
 
-<style lang="scss">
-@use './style/main.scss';
+<style scoped>
+
 </style>
